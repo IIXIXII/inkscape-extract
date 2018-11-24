@@ -22,5 +22,6 @@
         "**/.DS_Store": true,
         "**/doc/html": true
     },
-    "python.pythonPath": "C:\\Python35\\python.exe"
+    "python.pythonPath": "C:\\Python35\\python.exe",
+    "git.ignoreLimitWarning": true
 }
