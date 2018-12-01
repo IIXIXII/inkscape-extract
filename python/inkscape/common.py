@@ -1,17 +1,31 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 ###############################################################################
-# @copyright Copyright (C) Guichet Entreprises - All Rights Reserved
-# 	All Rights Reserved.
-# 	Unauthorized copying of this file, via any medium is strictly prohibited
-# 	Dissemination of this information or reproduction of this material
-# 	is strictly forbidden unless prior written permission is obtained
-# 	from Guichet Entreprises.
+#
+# Copyright (c) 2018 Florent TOURNOIS
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
 ###############################################################################
 
 ###############################################################################
-# Standard function are here.
-#
+# Standard commonfunction are here.
 ###############################################################################
 
 import logging
@@ -92,10 +106,10 @@ def set_correct_path(folder_or_file_name):
     return os.path.abspath(folder_or_file_name)
 
 def test_set_correct_path():
-    #~ current_dir = os.path.split(__get_this_filename())[0]
-    #~ root = os.path.abspath(os.path.join(current_dir, "./../../"))
-    #~ assert set_correct_path(current_dir + "/././../") == root + "\\python"
-    #~ assert set_correct_path(current_dir + "/././../../") == root
+    # ~ current_dir = os.path.split(__get_this_filename())[0]
+    # ~ root = os.path.abspath(os.path.join(current_dir, "./../../"))
+    # ~ assert set_correct_path(current_dir + "/././../") == root + "\\python"
+    # ~ assert set_correct_path(current_dir + "/././../../") == root
     assert set_correct_path("C:/") == "C:\\"
 
 
@@ -133,10 +147,10 @@ def check_folder(folder):
     return set_correct_path(folder)
 
 def test_check_folder():
-    #~ current_dir = os.path.split(__get_this_filename())[0]
-    #~ root = os.path.abspath(os.path.join(current_dir, "./../../"))
-    #~ assert check_folder(current_dir + "/././../") == root + "\\python"
-    #~ assert check_folder(current_dir + "/././../../") == root
+    # ~ current_dir = os.path.split(__get_this_filename())[0]
+    # ~ root = os.path.abspath(os.path.join(current_dir, "./../../"))
+    # ~ assert check_folder(current_dir + "/././../") == root + "\\python"
+    # ~ assert check_folder(current_dir + "/././../../") == root
     assert check_folder("C:/") == "C:\\"
 
     import pytest
