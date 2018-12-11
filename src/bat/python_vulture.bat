@@ -25,7 +25,7 @@ REM ############################################################################
 SET FUN="common.bat" 
 CALL %FUN% :CONFIGURE_DISPLAY
 CALL %FUN% :CLEAR_SCREEN
-CALL %FUN% :PRINT_LINE "   Find unused function" 
+CALL %FUN% :PRINT_LINE "   Find unused function " 
 REM ###############################################################################
 cd ../python
 vulture  --ignore-names "test_*,unused_*" inkscape
