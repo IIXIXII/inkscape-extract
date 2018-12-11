@@ -1,4 +1,4 @@
-@ECHO off
+@ECHO OFF
 REM ###############################################################################
 REM # 
 REM # Copyright (c) 2018 Florent TOURNOIS
@@ -25,9 +25,14 @@ REM ############################################################################
 SET FUN="common.bat" 
 CALL %FUN% :CONFIGURE_DISPLAY
 CALL %FUN% :CLEAR_SCREEN
-CALL %FUN% :PRINT_LINE "   Setup python package" 
-python -V
-pip -V
-python -m pip install --upgrade pip
-pip install beautifulsoup4
+CALL %FUN% :PRINT_LINE "   Test python package" 
+REM ###############################################################################
+cd ../python
+REM ~ pytest -v common.py 
+REM ~ pytest  test_normalize.py
+REM ~ pytest -v test_instruction.py
+REM ~ pytest -v test_mdcommon.py
+REM ~ pytest -v test_mdtopdf.py
+REM ~ pytest -v test_normalize.py
+pytest -v
 pause

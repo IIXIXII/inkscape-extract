@@ -28,7 +28,7 @@
                 "build"
             ],
             "options": {
-                "cwd": "${workspaceRoot}/python/"
+                "cwd": "${workspaceRoot}/src/python/"
             },
             "problemMatcher": [],
             "presentation": {

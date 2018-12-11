@@ -1,4 +1,4 @@
-@ECHO off
+@ECHO OFF
 REM ###############################################################################
 REM # 
 REM # Copyright (c) 2018 Florent TOURNOIS
@@ -22,11 +22,11 @@ REM # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
 REM # SOFTWARE.
 REM # 
 REM ###############################################################################
-SET FUN="..\bat\common.bat" 
+SET FUN="common.bat" 
 CALL %FUN% :CONFIGURE_DISPLAY
 CALL %FUN% :CLEAR_SCREEN
-python -V
-pip -V
-python -m pip install --upgrade pip
-pip install beautifulsoup4
+CALL %FUN% :PRINT_LINE "   Freeze python" 
+cd ../python
+python iextract_setup.py build
 pause
+

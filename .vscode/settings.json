@@ -1,17 +1,17 @@
 {
     "python.unitTest.pyTestArgs": [
-        "${workspaceRoot}/python/"
+        "${workspaceRoot}/src/python/"
     ],
     "python.unitTest.pyTestEnabled": true,
     "python.linting.pep8Enabled": true,
     "python.linting.pep8Args": [
-        "--config=${workspaceRoot}/python/config/pep8.conf"
+        "--config=${workspaceRoot}/src/python/config/pep8.conf"
     ],
     "python.linting.pylintArgs": [
-        "--rcfile=${workspaceRoot}/python/config/pylint.conf"
+        "--rcfile=${workspaceRoot}/src/python/config/pylint.conf"
     ],
     "python.formatting.autopep8Args": [
-        "--global-config=${workspaceRoot}/python/config/pep8.conf"
+        "--global-config=${workspaceRoot}/src/python/config/pep8.conf"
     ],
     "editor.formatOnSave": true,
     "files.exclude": {

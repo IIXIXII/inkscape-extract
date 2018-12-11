@@ -1,12 +1,27 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 ###############################################################################
-# @copyright Copyright (C) Guichet Entreprises - All Rights Reserved
-# 	All Rights Reserved.
-# 	Unauthorized copying of this file, via any medium is strictly prohibited
-# 	Dissemination of this information or reproduction of this material
-# 	is strictly forbidden unless prior written permission is obtained
-# 	from Guichet Entreprises.
+#
+# Copyright (c) 2018 Florent TOURNOIS
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
 ###############################################################################
 #
 # invoke using:
@@ -112,19 +127,19 @@ sys.path.append(os.path.dirname(__file__))
 ###############################################################################
 MY_TARGET_EXE = Executable(
     # what to build
-    script="inkscapetools.py",
+    script="iextract.py",
     initScript=None,
     base='Win32GUI',
     # base='Console',
     #  targetDir = r"dist",
-    targetName="inkscapetools.exe",
+    targetName="inkscape_extract.exe",
     #  compress = True,
     #  copyDependentFiles = True,
     #  appendScriptToExe = False,
     #  appendScriptToLibrary = False,
     icon=os.path.join(os.path.dirname(__file__), '..',
-                      'packaging', 'icon', 'ge.ico'),
-    trademarks="Guichet Entreprises @2017"
+                      'nsis', 'icon', 'inkscape.ico'),
+    trademarks="Florent Tournois @2017"
 )
 
 ###############################################################################
@@ -250,9 +265,9 @@ LOCAL_OPTIONS = {
 }
 
 setup(
-    name="InkscapeTools",
+    name="Inkscape Extract",
     version="0.1",
-    description="Inkscape Tools",
+    description="Inkscape Extract",
     author="Florent Tournois",
     options={"build_exe": LOCAL_OPTIONS},
     executables=[MY_TARGET_EXE]

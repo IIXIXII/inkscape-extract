@@ -22,9 +22,13 @@ REM # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
 REM # SOFTWARE.
 REM # 
 REM ###############################################################################
-SET FUN="..\bat\common.bat" 
+SET FUN="common.bat" 
 CALL %FUN% :CONFIGURE_DISPLAY
 CALL %FUN% :CLEAR_SCREEN
-CALL %FUN% :PRINT_LINE "----" 
-CALL %FUN% :PRINT_LINE "MYPATH=%MYPATH%"
+CALL %FUN% :PRINT_LINE "   Setup python package" 
+python -V
+pip -V
+python -m pip install --upgrade pip
+pip install beautifulsoup4
+pip install vulture
 pause
