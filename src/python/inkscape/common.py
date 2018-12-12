@@ -1,17 +1,31 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 ###############################################################################
-# @copyright Copyright (C) Guichet Entreprises - All Rights Reserved
-# 	All Rights Reserved.
-# 	Unauthorized copying of this file, via any medium is strictly prohibited
-# 	Dissemination of this information or reproduction of this material
-# 	is strictly forbidden unless prior written permission is obtained
-# 	from Guichet Entreprises.
+#
+# Copyright (c) 2018 Florent TOURNOIS
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
 ###############################################################################
 
 ###############################################################################
-# Standard function are here.
-#
+# Standard commonfunction are here.
 ###############################################################################
 
 import logging
@@ -48,40 +62,6 @@ def static(**kwargs):
 
 
 ###############################################################################
-# Convert string to the output
-#
-# @param text the text
-# @param coding_in initial coding of the string
-# @param coding_out final coding of the string
-# @return the text converted
-###############################################################################
-def print_conv(text, coding_in='utf-8', coding_out=None):
-    if (coding_out is None) and (sys.stdout is not None):
-        coding_out = sys.stdout.encoding
-    else:
-        coding_out = 'utf-8'
-
-    return text.encode(coding_in).decode(coding_out)
-
-
-###############################################################################
-# Remove all whitespace from the beginning and the end of the text
-#
-# @param text the text
-# @return the text without the whitespace at the beginning and at the end
-###############################################################################
-def strip_first_and_last_space(text):
-    whitespace_list = [' ', '\t', '\r', '\n']
-    result = text
-    while (len(result) > 0) and (result[0] in whitespace_list):
-        result = result[1:]
-
-    while (len(result) > 0) and (result[-1] in whitespace_list):
-        result = result[:-1]
-    return result
-
-
-###############################################################################
 # Retrive the correct complet path
 # This function return a folder or filename with a standard way of writing.
 #
@@ -92,10 +72,10 @@ def set_correct_path(folder_or_file_name):
     return os.path.abspath(folder_or_file_name)
 
 def test_set_correct_path():
-    #~ current_dir = os.path.split(__get_this_filename())[0]
-    #~ root = os.path.abspath(os.path.join(current_dir, "./../../"))
-    #~ assert set_correct_path(current_dir + "/././../") == root + "\\python"
-    #~ assert set_correct_path(current_dir + "/././../../") == root
+    # ~ current_dir = os.path.split(__get_this_filename())[0]
+    # ~ root = os.path.abspath(os.path.join(current_dir, "./../../"))
+    # ~ assert set_correct_path(current_dir + "/././../") == root + "\\python"
+    # ~ assert set_correct_path(current_dir + "/././../../") == root
     assert set_correct_path("C:/") == "C:\\"
 
 
@@ -133,10 +113,10 @@ def check_folder(folder):
     return set_correct_path(folder)
 
 def test_check_folder():
-    #~ current_dir = os.path.split(__get_this_filename())[0]
-    #~ root = os.path.abspath(os.path.join(current_dir, "./../../"))
-    #~ assert check_folder(current_dir + "/././../") == root + "\\python"
-    #~ assert check_folder(current_dir + "/././../../") == root
+    # ~ current_dir = os.path.split(__get_this_filename())[0]
+    # ~ root = os.path.abspath(os.path.join(current_dir, "./../../"))
+    # ~ assert check_folder(current_dir + "/././../") == root + "\\python"
+    # ~ assert check_folder(current_dir + "/././../../") == root
     assert check_folder("C:/") == "C:\\"
 
     import pytest
@@ -546,39 +526,6 @@ def test_get_good_filename():
     assert get_good_filename(
         "/.?:;,§/;,MLjkML;,!èè````'':;,") == "_.__;,§_;,MLjkML;,!èè````''_;,"
 
-###############################################################################
-# Transform a string to be a good filename for windows
-#
-# @param filename the file name
-# @return the right filename
-###############################################################################
-def get_flat_filename(filename):
-    result = get_good_filename(
-        filename, char_to_replace=r'[\.\\/*?:"<>|() \'’,]')
-
-    return result
-
-#  def create_test_get_flat_filename():
-    #  test_list=[]
-    #  test_list.append(__file__)
-    #  test_list.append("KJYKG78-(ç-èç756_(-'è('37('9èçè_-ç_è-")
-    #  test_list.append("/.?:;,§/;,MLjkML;,!:;,")
-    #  test_list.append("/.?:;,§/;,MLjkML;,!:;,")
-    #  test_list.append("/.?:;,§/;,MLjkML;,!èè````'':;,")
-
-    #  for t in test_list:
-    #  print('\tassert(get_good_filename("%s") == "%s")'
-    #        ''%(t,get_good_filename(t).replace("\\","\\\\")))
-
-def test_get_flat_filename():
-    assert get_good_filename("common.py") == "common.py"
-    assert get_good_filename(
-        "/.?:;,§/;,MLjkML;,!:;,") == "_.__;,§_;,MLjkML;,!_;,"
-    assert get_good_filename(
-        "/.?:;,§/;,MLjkML;,!:;,") == "_.__;,§_;,MLjkML;,!_;,"
-    assert get_good_filename(
-        "/.?:;,§/;,MLjkML;,!èè````'':;,") == "_.__;,§_;,MLjkML;,!èè````''_;,"
-
 
 ###############################################################################
 # Create a temproray folder in an appropriate temp area
@@ -631,87 +578,6 @@ def test_get_new_temp_dir():
 
 
 ###############################################################################
-# Change the filename extension
-#
-# @param filename the filename
-# @param ext the new extension with a dot (ext = '.txt')
-# @return the filename with the new extension
-###############################################################################
-def filename_ext_to(filename, ext):
-    return os.path.splitext(filename)[0] + ext
-
-
-###############################################################################
-# Change the filename extension to html
-#
-# @param filename the filename
-# @return the filename with the new extension
-###############################################################################
-def filename_ext_to_html(filename):
-    return filename_ext_to(filename, ".html")
-
-
-###############################################################################
-# Change the filename extension to md
-#
-# @param filename the filename
-# @return the filename with the new extension
-###############################################################################
-def filename_ext_to_md(filename):
-    return filename_ext_to(filename, ".md")
-
-
-###############################################################################
-# Change the filename extension to pdf
-#
-# @param filename the filename
-# @return the filename with the new extension
-###############################################################################
-def filename_ext_to_pdf(filename):
-    return filename_ext_to(filename, ".pdf")
-
-
-###############################################################################
-# Change the filename extension to hhp
-#
-# @param filename the filename
-# @return the filename with the new extension
-###############################################################################
-def filename_ext_to_hhp(filename):
-    return filename_ext_to(filename, ".hhp")
-
-
-###############################################################################
-# Change the filename extension to hhc
-#
-# @param filename the filename
-# @return the filename with the new extension
-###############################################################################
-def filename_ext_to_hhc(filename):
-    return filename_ext_to(filename, ".hhc")
-
-
-###############################################################################
-# Change the filename extension to hhk
-#
-# @param filename the filename
-# @return the filename with the new extension
-###############################################################################
-def filename_ext_to_hhk(filename):
-    return filename_ext_to(filename, ".hhk")
-
-
-###############################################################################
-# Change the filename extension to chm
-#
-# @param filename the filename
-# @return the filename with the new extension
-###############################################################################
-def filename_ext_to_chm(filename):
-    return filename_ext_to(filename, ".chm")
-
-
-###############################################################################
 # Get today date
 #
 # @return a string "YYYY-MM-DD"
@@ -724,40 +590,6 @@ def test_get_today():
     assert len(get_today()) == 10
     assert get_today()[4] == "-"
     assert get_today()[7] == "-"
-
-
-###############################################################################
-# Apply function to every files in folder
-#
-# @param folder	The folder to scan
-# @param process The function to pally to each file the function take one
-#                parameter (the filename)
-# @param filename_ext The file extension (markdown for the default)
-###############################################################################
-def apply_function_in_folder(folder, process, filename_ext=".md"):
-    for root, unused_dirs, files in os.walk(folder):
-        for filename in files:
-            current_ext = os.path.splitext(os.path.join(root, filename))[1]
-            if current_ext == filename_ext:
-                process(os.path.join(root, filename))
-    return
-
-###############################################################################
-# Check the length of an object
-#
-# @param obj the object.
-# @param length the object length (default = 1).
-# @return the object.
-###############################################################################
-def check_len(obj, length=1):
-    if not len(obj) == length:
-        logging.error('The list is supposed to have a '
-                      'length equal to %s and it is %d ',
-                      length, len(obj))
-        raise RuntimeError(
-            'The list is supposed to have a length equal '
-            'to %s and it is %d ' % (length, len(obj)))
-    return obj
 
 
 ###############################################################################
@@ -859,7 +691,7 @@ def __main():
 
     # print(os.path.split(__get_this_filename())[0])
     # print(set_correct_path("./"))
-    #  __launch_test()
+    __launch_test()
     # test_search_for_file()
     # links = search_link_in_md_file("./test-md/testLinks.md")
     # for link in links:
@@ -869,7 +701,7 @@ def __main():
     #  create_test_get_good_filename()
     #  create_test_get_flat_filename()
 
-    test_number_of_subfolder()
+    # test_number_of_subfolder()
 
     logging.info('Finished')
     # ------------------------------------

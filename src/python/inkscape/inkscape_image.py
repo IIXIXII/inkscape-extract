@@ -1,17 +1,30 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 ###############################################################################
-# @copyright Copyright (C) Guichet Entreprises - All Rights Reserved
-# 	All Rights Reserved.
-# 	Unauthorized copying of this file, via any medium is strictly prohibited
-# 	Dissemination of this information or reproduction of this material
-# 	is strictly forbidden unless prior written permission is obtained
-# 	from Guichet Entreprises.
-###############################################################################
-
-###############################################################################
-# Common functions for inkscape exploration
 #
+# Copyright (c) 2018 Florent TOURNOIS
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+###############################################################################
+###############################################################################
+# Core function for inkscape exploration and create batch file for extraction
 ###############################################################################
 
 import logging
@@ -424,8 +437,8 @@ def get_picture_id_from_img(xml_content):
     if len(pictures) != 1:
         logging.error('image id="%s" has too many pictures (%d)',
                       xml_content['id'], len(pictures))
-        raise Exception('image id="%s" has too many pictures (%d)',
-                        xml_content['id'], len(pictures))
+        raise Exception('image id="%s" has too many pictures (%d)' % (
+            xml_content['id'], len(pictures)))
 
     return pictures[0]['id']
 
@@ -441,8 +454,8 @@ def get_name_from_img(xml_content):
     if len(names) != 1:
         logging.error('image id="%s" has too many names (%d)',
                       xml_content['id'], len(names))
-        raise Exception('image id="%s" has too many names (%d)',
-                        xml_content['id'], len(names))
+        raise Exception('image id="%s" has too many names (%d)' % (
+            xml_content['id'], len(names)))
 
     name = extract_lines_from_xml_element(names)
     name = name.replace('\n', '').replace('\xa0', '')
@@ -462,8 +475,8 @@ def get_command_from_img(xml_content):
     if len(commands) > 1:
         logging.error('image id="%s" has too many commands (%d)',
                       xml_content['id'], len(commands))
-        raise Exception('image id="%s" has too many commands (%d)',
-                        xml_content['id'], len(commands))
+        raise Exception('image id="%s" has too many commands (%d)' % (
+            xml_content['id'], len(commands)))
 
     return extract_lines_from_xml_element(commands)
 
@@ -670,14 +683,10 @@ def __main():
     logging.info('The Python version is %s.%s.%s',
                  sys.version_info[0], sys.version_info[1], sys.version_info[2])
 
-    #~ local_path = os.path.split(__get_this_filename())[0]
-    #~ file1 = os.path.join(local_path, "test-svg", "test1.svg")
+    local_path = os.path.split(__get_this_filename())[0]
+    file1 = os.path.join(local_path, "test-svg", "test1.svg")
 
-    # cmds = get_commands_from_inkscape_file(file1)
-    #~ create_batch_from_inkscape_file(file1)
-    #~ create_batch_from_inkscape_file("C:\\dev\\icon-ge\\Charte graphique GE v14.svg")
-    create_batch_from_inkscape_file(
-        "C:\\Users\\flore\\Dropbox\\Syrah\\MadeinLaw Front\\Design\\MIL - V2\\design MIL v2.svg")
+    create_batch_from_inkscape_file(file1)
 
     logging.info('Finished')
     # ------------------------------------
