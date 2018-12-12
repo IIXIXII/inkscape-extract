@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "taskName": "Generate documentation",
+            "label": "Generate documentation",
             "type": "shell",
             "command": "doxygen.exe",
             "args": [
@@ -20,7 +20,7 @@
             }
         },
         {
-            "taskName": "Generate binary",
+            "label": "Generate binary",
             "type": "shell",
             "command": "python",
             "args": [
@@ -37,7 +37,7 @@
             }
         },
         {
-            "taskName": "Run Python",
+            "label": "Run Python",
             "group": {
                 "kind": "build",
                 "isDefault": true
