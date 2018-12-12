@@ -38,9 +38,10 @@ if exist %IEXTRACT% (
 )
 CD ../../examples
 FOR %%i in (*.svg) DO (
-	ECHO:
+	ECHO:-------------------------------
 	ECHO: %%i
+	ECHO:-------------------------------
 	%IEXTRACT% --verbose=yes --windows=no --create-batch=yes %%i
+	ECHO:
 )
-
-
+pause

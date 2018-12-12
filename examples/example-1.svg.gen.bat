@@ -119,74 +119,74 @@ SET /a COUNTER_IMG=%COUNTER_IMG% + 1
 REM ###############################################################################
 REM ------------------------------------------------------------
 SET /a COUNTER_EXPORT=%COUNTER_EXPORT% + 1
-SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output\trium\trium-team-h64-trans.png"
-SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output\trium"
+SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\trium\trium-team-h64-trans.png"
+SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\trium"
 SET EXPORT_TYPE=PNG
 SET PARAM1=HEIGHT=64
 SET PARAM2=transparent
 SET PARAM3=
 SET PARAM4=
-SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g4700" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="64" --export-background-opacity="0" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\trium\trium-team-h64-trans.png"
+SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g4700" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="64" --export-background-opacity="0" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\trium\trium-team-h64-trans.png"
 CALL :GENERATE-EXPORT
 CALL :RESET_ERROR
 if exist %OUTPUT_FILENAME% (
     @ECHO: No need to create
 ) else (
-    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g4700" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="64" --export-background-opacity="0" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\trium\trium-team-h64-trans.png"
+    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g4700" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="64" --export-background-opacity="0" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\trium\trium-team-h64-trans.png"
     TIMEOUT /T 3 /NOBREAK
 )
 REM ------------------------------------------------------------
 SET /a COUNTER_EXPORT=%COUNTER_EXPORT% + 1
-SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output\trium\trium-team-h128-trans.png"
-SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output\trium"
+SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\trium\trium-team-h128-trans.png"
+SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\trium"
 SET EXPORT_TYPE=PNG
 SET PARAM1=HEIGHT=128
 SET PARAM2=transparent
 SET PARAM3=
 SET PARAM4=
-SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g4700" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="128" --export-background-opacity="0" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\trium\trium-team-h128-trans.png"
+SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g4700" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="128" --export-background-opacity="0" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\trium\trium-team-h128-trans.png"
 CALL :GENERATE-EXPORT
 CALL :RESET_ERROR
 if exist %OUTPUT_FILENAME% (
     @ECHO: No need to create
 ) else (
-    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g4700" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="128" --export-background-opacity="0" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\trium\trium-team-h128-trans.png"
+    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g4700" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="128" --export-background-opacity="0" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\trium\trium-team-h128-trans.png"
     TIMEOUT /T 3 /NOBREAK
 )
 REM ------------------------------------------------------------
 SET /a COUNTER_EXPORT=%COUNTER_EXPORT% + 1
-SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output\trium\trium-team-h1024-trans.png"
-SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output\trium"
+SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\trium\trium-team-h1024-trans.png"
+SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\trium"
 SET EXPORT_TYPE=PNG
 SET PARAM1=HEIGHT=1024
 SET PARAM2=transparent
 SET PARAM3=
 SET PARAM4=
-SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g4700" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="1024" --export-background-opacity="0" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\trium\trium-team-h1024-trans.png"
+SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g4700" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="1024" --export-background-opacity="0" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\trium\trium-team-h1024-trans.png"
 CALL :GENERATE-EXPORT
 CALL :RESET_ERROR
 if exist %OUTPUT_FILENAME% (
     @ECHO: No need to create
 ) else (
-    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g4700" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="1024" --export-background-opacity="0" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\trium\trium-team-h1024-trans.png"
+    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g4700" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="1024" --export-background-opacity="0" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\trium\trium-team-h1024-trans.png"
     TIMEOUT /T 3 /NOBREAK
 )
 REM ------------------------------------------------------------
 SET /a COUNTER_EXPORT=%COUNTER_EXPORT% + 1
-SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output\trium\trium-team-h2048-trans.png"
-SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output\trium"
+SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\trium\trium-team-h2048-trans.png"
+SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\trium"
 SET EXPORT_TYPE=PNG
 SET PARAM1=HEIGHT=2048
 SET PARAM2=transparent
 SET PARAM3=
 SET PARAM4=
-SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g4700" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="2048" --export-background-opacity="0" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\trium\trium-team-h2048-trans.png"
+SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g4700" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="2048" --export-background-opacity="0" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\trium\trium-team-h2048-trans.png"
 CALL :GENERATE-EXPORT
 CALL :RESET_ERROR
 if exist %OUTPUT_FILENAME% (
     @ECHO: No need to create
 ) else (
-    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g4700" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="2048" --export-background-opacity="0" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\trium\trium-team-h2048-trans.png"
+    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g4700" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="2048" --export-background-opacity="0" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\trium\trium-team-h2048-trans.png"
     TIMEOUT /T 3 /NOBREAK
 )
 REM ###############################################################################
@@ -196,271 +196,271 @@ SET /a COUNTER_IMG=%COUNTER_IMG% + 1
 REM ###############################################################################
 REM ------------------------------------------------------------
 SET /a COUNTER_EXPORT=%COUNTER_EXPORT% + 1
-SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h16-opacity255-bg0-146-188.png"
-SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output\ge"
+SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h16-opacity255-bg0-146-188.png"
+SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge"
 SET EXPORT_TYPE=PNG
 SET PARAM1=HEIGHT=16
 SET PARAM2=BACKGROUND COLOR rgb(0,146,188)
 SET PARAM3=
 SET PARAM4=
-SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="16" --export-background-opacity="255" --export-background="rgb(0,146,188)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h16-opacity255-bg0-146-188.png"
+SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="16" --export-background-opacity="255" --export-background="rgb(0,146,188)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h16-opacity255-bg0-146-188.png"
 CALL :GENERATE-EXPORT
 CALL :RESET_ERROR
 if exist %OUTPUT_FILENAME% (
     @ECHO: No need to create
 ) else (
-    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="16" --export-background-opacity="255" --export-background="rgb(0,146,188)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h16-opacity255-bg0-146-188.png"
+    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="16" --export-background-opacity="255" --export-background="rgb(0,146,188)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h16-opacity255-bg0-146-188.png"
     TIMEOUT /T 3 /NOBREAK
 )
 REM ------------------------------------------------------------
 SET /a COUNTER_EXPORT=%COUNTER_EXPORT% + 1
-SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h16-opacity255-bg229-49-56.png"
-SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output\ge"
+SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h16-opacity255-bg229-49-56.png"
+SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge"
 SET EXPORT_TYPE=PNG
 SET PARAM1=HEIGHT=16
 SET PARAM2=BACKGROUND COLOR rgb(0,146,188)
 SET PARAM3=
 SET PARAM4=
-SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="16" --export-background-opacity="255" --export-background="rgb(229,49,56)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h16-opacity255-bg229-49-56.png"
+SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="16" --export-background-opacity="255" --export-background="rgb(229,49,56)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h16-opacity255-bg229-49-56.png"
 CALL :GENERATE-EXPORT
 CALL :RESET_ERROR
 if exist %OUTPUT_FILENAME% (
     @ECHO: No need to create
 ) else (
-    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="16" --export-background-opacity="255" --export-background="rgb(229,49,56)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h16-opacity255-bg229-49-56.png"
+    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="16" --export-background-opacity="255" --export-background="rgb(229,49,56)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h16-opacity255-bg229-49-56.png"
     TIMEOUT /T 3 /NOBREAK
 )
 REM ------------------------------------------------------------
 SET /a COUNTER_EXPORT=%COUNTER_EXPORT% + 1
-SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h16-opacity255-bg132-134-135.png"
-SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output\ge"
+SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h16-opacity255-bg132-134-135.png"
+SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge"
 SET EXPORT_TYPE=PNG
 SET PARAM1=HEIGHT=16
 SET PARAM2=BACKGROUND COLOR rgb(0,146,188)
 SET PARAM3=
 SET PARAM4=
-SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="16" --export-background-opacity="255" --export-background="rgb(132,134,135)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h16-opacity255-bg132-134-135.png"
+SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="16" --export-background-opacity="255" --export-background="rgb(132,134,135)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h16-opacity255-bg132-134-135.png"
 CALL :GENERATE-EXPORT
 CALL :RESET_ERROR
 if exist %OUTPUT_FILENAME% (
     @ECHO: No need to create
 ) else (
-    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="16" --export-background-opacity="255" --export-background="rgb(132,134,135)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h16-opacity255-bg132-134-135.png"
+    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="16" --export-background-opacity="255" --export-background="rgb(132,134,135)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h16-opacity255-bg132-134-135.png"
     TIMEOUT /T 3 /NOBREAK
 )
 REM ------------------------------------------------------------
 SET /a COUNTER_EXPORT=%COUNTER_EXPORT% + 1
-SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h32-opacity255-bg0-146-188.png"
-SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output\ge"
+SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h32-opacity255-bg0-146-188.png"
+SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge"
 SET EXPORT_TYPE=PNG
 SET PARAM1=HEIGHT=32
 SET PARAM2=BACKGROUND COLOR rgb(0,146,188)
 SET PARAM3=
 SET PARAM4=
-SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="32" --export-background-opacity="255" --export-background="rgb(0,146,188)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h32-opacity255-bg0-146-188.png"
+SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="32" --export-background-opacity="255" --export-background="rgb(0,146,188)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h32-opacity255-bg0-146-188.png"
 CALL :GENERATE-EXPORT
 CALL :RESET_ERROR
 if exist %OUTPUT_FILENAME% (
     @ECHO: No need to create
 ) else (
-    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="32" --export-background-opacity="255" --export-background="rgb(0,146,188)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h32-opacity255-bg0-146-188.png"
+    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="32" --export-background-opacity="255" --export-background="rgb(0,146,188)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h32-opacity255-bg0-146-188.png"
     TIMEOUT /T 3 /NOBREAK
 )
 REM ------------------------------------------------------------
 SET /a COUNTER_EXPORT=%COUNTER_EXPORT% + 1
-SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h32-opacity255-bg229-49-56.png"
-SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output\ge"
+SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h32-opacity255-bg229-49-56.png"
+SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge"
 SET EXPORT_TYPE=PNG
 SET PARAM1=HEIGHT=32
 SET PARAM2=BACKGROUND COLOR rgb(0,146,188)
 SET PARAM3=
 SET PARAM4=
-SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="32" --export-background-opacity="255" --export-background="rgb(229,49,56)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h32-opacity255-bg229-49-56.png"
+SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="32" --export-background-opacity="255" --export-background="rgb(229,49,56)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h32-opacity255-bg229-49-56.png"
 CALL :GENERATE-EXPORT
 CALL :RESET_ERROR
 if exist %OUTPUT_FILENAME% (
     @ECHO: No need to create
 ) else (
-    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="32" --export-background-opacity="255" --export-background="rgb(229,49,56)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h32-opacity255-bg229-49-56.png"
+    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="32" --export-background-opacity="255" --export-background="rgb(229,49,56)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h32-opacity255-bg229-49-56.png"
     TIMEOUT /T 3 /NOBREAK
 )
 REM ------------------------------------------------------------
 SET /a COUNTER_EXPORT=%COUNTER_EXPORT% + 1
-SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h32-opacity255-bg132-134-135.png"
-SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output\ge"
+SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h32-opacity255-bg132-134-135.png"
+SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge"
 SET EXPORT_TYPE=PNG
 SET PARAM1=HEIGHT=32
 SET PARAM2=BACKGROUND COLOR rgb(0,146,188)
 SET PARAM3=
 SET PARAM4=
-SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="32" --export-background-opacity="255" --export-background="rgb(132,134,135)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h32-opacity255-bg132-134-135.png"
+SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="32" --export-background-opacity="255" --export-background="rgb(132,134,135)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h32-opacity255-bg132-134-135.png"
 CALL :GENERATE-EXPORT
 CALL :RESET_ERROR
 if exist %OUTPUT_FILENAME% (
     @ECHO: No need to create
 ) else (
-    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="32" --export-background-opacity="255" --export-background="rgb(132,134,135)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h32-opacity255-bg132-134-135.png"
+    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="32" --export-background-opacity="255" --export-background="rgb(132,134,135)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h32-opacity255-bg132-134-135.png"
     TIMEOUT /T 3 /NOBREAK
 )
 REM ------------------------------------------------------------
 SET /a COUNTER_EXPORT=%COUNTER_EXPORT% + 1
-SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h64-opacity255-bg0-146-188.png"
-SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output\ge"
+SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h64-opacity255-bg0-146-188.png"
+SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge"
 SET EXPORT_TYPE=PNG
 SET PARAM1=HEIGHT=64
 SET PARAM2=BACKGROUND COLOR rgb(0,146,188)
 SET PARAM3=
 SET PARAM4=
-SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="64" --export-background-opacity="255" --export-background="rgb(0,146,188)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h64-opacity255-bg0-146-188.png"
+SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="64" --export-background-opacity="255" --export-background="rgb(0,146,188)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h64-opacity255-bg0-146-188.png"
 CALL :GENERATE-EXPORT
 CALL :RESET_ERROR
 if exist %OUTPUT_FILENAME% (
     @ECHO: No need to create
 ) else (
-    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="64" --export-background-opacity="255" --export-background="rgb(0,146,188)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h64-opacity255-bg0-146-188.png"
+    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="64" --export-background-opacity="255" --export-background="rgb(0,146,188)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h64-opacity255-bg0-146-188.png"
     TIMEOUT /T 3 /NOBREAK
 )
 REM ------------------------------------------------------------
 SET /a COUNTER_EXPORT=%COUNTER_EXPORT% + 1
-SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h64-opacity255-bg229-49-56.png"
-SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output\ge"
+SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h64-opacity255-bg229-49-56.png"
+SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge"
 SET EXPORT_TYPE=PNG
 SET PARAM1=HEIGHT=64
 SET PARAM2=BACKGROUND COLOR rgb(0,146,188)
 SET PARAM3=
 SET PARAM4=
-SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="64" --export-background-opacity="255" --export-background="rgb(229,49,56)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h64-opacity255-bg229-49-56.png"
+SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="64" --export-background-opacity="255" --export-background="rgb(229,49,56)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h64-opacity255-bg229-49-56.png"
 CALL :GENERATE-EXPORT
 CALL :RESET_ERROR
 if exist %OUTPUT_FILENAME% (
     @ECHO: No need to create
 ) else (
-    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="64" --export-background-opacity="255" --export-background="rgb(229,49,56)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h64-opacity255-bg229-49-56.png"
+    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="64" --export-background-opacity="255" --export-background="rgb(229,49,56)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h64-opacity255-bg229-49-56.png"
     TIMEOUT /T 3 /NOBREAK
 )
 REM ------------------------------------------------------------
 SET /a COUNTER_EXPORT=%COUNTER_EXPORT% + 1
-SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h64-opacity255-bg132-134-135.png"
-SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output\ge"
+SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h64-opacity255-bg132-134-135.png"
+SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge"
 SET EXPORT_TYPE=PNG
 SET PARAM1=HEIGHT=64
 SET PARAM2=BACKGROUND COLOR rgb(0,146,188)
 SET PARAM3=
 SET PARAM4=
-SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="64" --export-background-opacity="255" --export-background="rgb(132,134,135)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h64-opacity255-bg132-134-135.png"
+SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="64" --export-background-opacity="255" --export-background="rgb(132,134,135)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h64-opacity255-bg132-134-135.png"
 CALL :GENERATE-EXPORT
 CALL :RESET_ERROR
 if exist %OUTPUT_FILENAME% (
     @ECHO: No need to create
 ) else (
-    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="64" --export-background-opacity="255" --export-background="rgb(132,134,135)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h64-opacity255-bg132-134-135.png"
+    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="64" --export-background-opacity="255" --export-background="rgb(132,134,135)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h64-opacity255-bg132-134-135.png"
     TIMEOUT /T 3 /NOBREAK
 )
 REM ------------------------------------------------------------
 SET /a COUNTER_EXPORT=%COUNTER_EXPORT% + 1
-SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h128-opacity255-bg0-146-188.png"
-SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output\ge"
+SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h128-opacity255-bg0-146-188.png"
+SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge"
 SET EXPORT_TYPE=PNG
 SET PARAM1=HEIGHT=128
 SET PARAM2=BACKGROUND COLOR rgb(0,146,188)
 SET PARAM3=
 SET PARAM4=
-SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="128" --export-background-opacity="255" --export-background="rgb(0,146,188)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h128-opacity255-bg0-146-188.png"
+SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="128" --export-background-opacity="255" --export-background="rgb(0,146,188)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h128-opacity255-bg0-146-188.png"
 CALL :GENERATE-EXPORT
 CALL :RESET_ERROR
 if exist %OUTPUT_FILENAME% (
     @ECHO: No need to create
 ) else (
-    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="128" --export-background-opacity="255" --export-background="rgb(0,146,188)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h128-opacity255-bg0-146-188.png"
+    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="128" --export-background-opacity="255" --export-background="rgb(0,146,188)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h128-opacity255-bg0-146-188.png"
     TIMEOUT /T 3 /NOBREAK
 )
 REM ------------------------------------------------------------
 SET /a COUNTER_EXPORT=%COUNTER_EXPORT% + 1
-SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h128-opacity255-bg229-49-56.png"
-SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output\ge"
+SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h128-opacity255-bg229-49-56.png"
+SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge"
 SET EXPORT_TYPE=PNG
 SET PARAM1=HEIGHT=128
 SET PARAM2=BACKGROUND COLOR rgb(0,146,188)
 SET PARAM3=
 SET PARAM4=
-SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="128" --export-background-opacity="255" --export-background="rgb(229,49,56)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h128-opacity255-bg229-49-56.png"
+SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="128" --export-background-opacity="255" --export-background="rgb(229,49,56)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h128-opacity255-bg229-49-56.png"
 CALL :GENERATE-EXPORT
 CALL :RESET_ERROR
 if exist %OUTPUT_FILENAME% (
     @ECHO: No need to create
 ) else (
-    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="128" --export-background-opacity="255" --export-background="rgb(229,49,56)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h128-opacity255-bg229-49-56.png"
+    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="128" --export-background-opacity="255" --export-background="rgb(229,49,56)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h128-opacity255-bg229-49-56.png"
     TIMEOUT /T 3 /NOBREAK
 )
 REM ------------------------------------------------------------
 SET /a COUNTER_EXPORT=%COUNTER_EXPORT% + 1
-SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h128-opacity255-bg132-134-135.png"
-SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output\ge"
+SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h128-opacity255-bg132-134-135.png"
+SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge"
 SET EXPORT_TYPE=PNG
 SET PARAM1=HEIGHT=128
 SET PARAM2=BACKGROUND COLOR rgb(0,146,188)
 SET PARAM3=
 SET PARAM4=
-SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="128" --export-background-opacity="255" --export-background="rgb(132,134,135)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h128-opacity255-bg132-134-135.png"
+SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="128" --export-background-opacity="255" --export-background="rgb(132,134,135)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h128-opacity255-bg132-134-135.png"
 CALL :GENERATE-EXPORT
 CALL :RESET_ERROR
 if exist %OUTPUT_FILENAME% (
     @ECHO: No need to create
 ) else (
-    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="128" --export-background-opacity="255" --export-background="rgb(132,134,135)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h128-opacity255-bg132-134-135.png"
+    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="128" --export-background-opacity="255" --export-background="rgb(132,134,135)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h128-opacity255-bg132-134-135.png"
     TIMEOUT /T 3 /NOBREAK
 )
 REM ------------------------------------------------------------
 SET /a COUNTER_EXPORT=%COUNTER_EXPORT% + 1
-SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h256-opacity255-bg0-146-188.png"
-SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output\ge"
+SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h256-opacity255-bg0-146-188.png"
+SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge"
 SET EXPORT_TYPE=PNG
 SET PARAM1=HEIGHT=256
 SET PARAM2=BACKGROUND COLOR rgb(0,146,188)
 SET PARAM3=
 SET PARAM4=
-SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="256" --export-background-opacity="255" --export-background="rgb(0,146,188)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h256-opacity255-bg0-146-188.png"
+SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="256" --export-background-opacity="255" --export-background="rgb(0,146,188)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h256-opacity255-bg0-146-188.png"
 CALL :GENERATE-EXPORT
 CALL :RESET_ERROR
 if exist %OUTPUT_FILENAME% (
     @ECHO: No need to create
 ) else (
-    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="256" --export-background-opacity="255" --export-background="rgb(0,146,188)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h256-opacity255-bg0-146-188.png"
+    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="256" --export-background-opacity="255" --export-background="rgb(0,146,188)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h256-opacity255-bg0-146-188.png"
     TIMEOUT /T 3 /NOBREAK
 )
 REM ------------------------------------------------------------
 SET /a COUNTER_EXPORT=%COUNTER_EXPORT% + 1
-SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h256-opacity255-bg229-49-56.png"
-SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output\ge"
+SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h256-opacity255-bg229-49-56.png"
+SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge"
 SET EXPORT_TYPE=PNG
 SET PARAM1=HEIGHT=256
 SET PARAM2=BACKGROUND COLOR rgb(0,146,188)
 SET PARAM3=
 SET PARAM4=
-SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="256" --export-background-opacity="255" --export-background="rgb(229,49,56)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h256-opacity255-bg229-49-56.png"
+SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="256" --export-background-opacity="255" --export-background="rgb(229,49,56)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h256-opacity255-bg229-49-56.png"
 CALL :GENERATE-EXPORT
 CALL :RESET_ERROR
 if exist %OUTPUT_FILENAME% (
     @ECHO: No need to create
 ) else (
-    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="256" --export-background-opacity="255" --export-background="rgb(229,49,56)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h256-opacity255-bg229-49-56.png"
+    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="256" --export-background-opacity="255" --export-background="rgb(229,49,56)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h256-opacity255-bg229-49-56.png"
     TIMEOUT /T 3 /NOBREAK
 )
 REM ------------------------------------------------------------
 SET /a COUNTER_EXPORT=%COUNTER_EXPORT% + 1
-SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h256-opacity255-bg132-134-135.png"
-SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output\ge"
+SET OUTPUT_FILENAME="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h256-opacity255-bg132-134-135.png"
+SET OUTPUT_PATH="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge"
 SET EXPORT_TYPE=PNG
 SET PARAM1=HEIGHT=256
 SET PARAM2=BACKGROUND COLOR rgb(0,146,188)
 SET PARAM3=
 SET PARAM4=
-SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="256" --export-background-opacity="255" --export-background="rgb(132,134,135)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h256-opacity255-bg132-134-135.png"
+SET CMD_LINE="C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="256" --export-background-opacity="255" --export-background="rgb(132,134,135)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h256-opacity255-bg132-134-135.png"
 CALL :GENERATE-EXPORT
 CALL :RESET_ERROR
 if exist %OUTPUT_FILENAME% (
     @ECHO: No need to create
 ) else (
-    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="256" --export-background-opacity="255" --export-background="rgb(132,134,135)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output\ge\ge-icon-mono-h256-opacity255-bg132-134-135.png"
+    "C:\Program Files\Inkscape\inkscape.exe" -z --export-id="g11778" --export-id-only --file="C:\tournois-family\dev\inkscape-extract\examples\example-1.svg"  --export-height="256" --export-background-opacity="255" --export-background="rgb(132,134,135)" --export-png="C:\tournois-family\dev\inkscape-extract\examples\output-ex1\ge\ge-icon-mono-h256-opacity255-bg132-134-135.png"
     TIMEOUT /T 3 /NOBREAK
 )
