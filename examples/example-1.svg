@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="709.49314"
+     inkscape:cx="452.49314"
      inkscape:cy="508.08725"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -2623,51 +2623,51 @@
      inkscape:label="Icon">
     <text
        id="text4136"
-       y="1080.2068"
-       x="-0.70144308"
+       y="328.33179"
+       x="1068.9861"
        style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.94713974px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#0092bc"
-         y="1080.2068"
-         x="-0.70144308"
+         y="328.33179"
+         x="1068.9861"
          id="tspan4138"
          sodipodi:role="line">General output command</tspan></text>
     <text
        inkscape:label="general_command"
        id="text4140"
-       y="1083.9924"
-       x="-0.58567089"
+       y="332.11743"
+       x="1069.1018"
        style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          style="font-size:13.94713974px;line-height:1.25;fill:#848687"
          id="tspan4144"
-         y="1087.4404"
-         x="-0.58567089"
+         y="335.5654"
+         x="1069.1018"
          sodipodi:role="line" /><tspan
          id="tspan20330"
          style="font-size:13.94713974px;line-height:1.25;fill:#848687"
-         y="1096.7168"
-         x="-0.58567089"
+         y="344.84183"
+         x="1069.1018"
          sodipodi:role="line">height=64;128;1024;2048</tspan><tspan
          id="tspan5809"
          style="font-size:13.94713974px;line-height:1.25;fill:#848687"
-         y="1114.1508"
-         x="-0.58567089"
+         y="362.27576"
+         x="1069.1018"
          sodipodi:role="line">background=rgb(255,255,255);rgb(0,0,0)</tspan><tspan
          style="font-size:13.94713974px;line-height:1.25;fill:#848687"
          id="tspan4148"
-         y="1131.5847"
-         x="-0.58567089"
+         y="379.70969"
+         x="1069.1018"
          sodipodi:role="line">background-opacity=0</tspan><tspan
          style="font-size:13.94713974px;line-height:1.25;fill:#848687"
          id="tspan4146"
-         y="1149.0186"
-         x="-0.58567089"
-         sodipodi:role="line">output_folder=output</tspan><tspan
+         y="397.14362"
+         x="1069.1018"
+         sodipodi:role="line">output_folder=output-ex1</tspan><tspan
          id="tspan8132"
          style="font-size:13.94713974px;line-height:1.25;fill:#848687"
-         y="1166.4525"
-         x="-0.58567089"
+         y="414.57751"
+         x="1069.1018"
          sodipodi:role="line">png</tspan></text>
     <g
        transform="translate(-4678.1137,2534.1903)"
