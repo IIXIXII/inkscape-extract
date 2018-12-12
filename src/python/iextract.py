@@ -73,12 +73,12 @@ if is_frozen():
             pass
 
     # and now redirect all default streams to this DummyStream:
-    sys.stdout = DummyStream()
-    sys.stderr = DummyStream()
-    sys.stdin = DummyStream()
-    sys.__stdout__ = DummyStream()
-    sys.__stderr__ = DummyStream()
-    sys.__stdin__ = DummyStream()
+    # sys.stdout = DummyStream()
+    # sys.stderr = DummyStream()
+    # sys.stdin = DummyStream()
+    # sys.__stdout__ = DummyStream()
+    # sys.__stderr__ = DummyStream()
+    # sys.__stdin__ = DummyStream()
 
 
 ###############################################################################

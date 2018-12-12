@@ -129,8 +129,8 @@ MY_TARGET_EXE = Executable(
     # what to build
     script="iextract.py",
     initScript=None,
-    base='Win32GUI',
-    # base='Console',
+    # base='Win32GUI',
+    base='Console',
     #  targetDir = r"dist",
     targetName="inkscape_extract.exe",
     #  compress = True,
@@ -169,7 +169,7 @@ BIN_PATH_EXCLUDES = []
 BIN_PATH_INCLUDES = []
 # 7) directory for built executables and dependent files,
 #       defaults to build/
-BUILD_EXE = "dist/"
+BUILD_EXE = "../../distribution/"
 # 8) create a compressed zip file
 COMPRESSED = False
 # 9) comma separated list of constant values to include in the constants
