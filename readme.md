@@ -38,7 +38,27 @@ Finaly, group the name, the command and the picture to define the complet extrac
 ![group the all object](capture-5.PNG "image")
 
 
-You can also group some command in the object **general_command**
+You can also group some commands in the object **general_command**.
+![group some commands](capture-6.PNG "general_command")
+
+
+2 - Create the batch to generate images
+---------------------------------------
+
+
+
+
+3 - Launch the batch and generate images
+----------------------------------------
+
+![Launch batch](capture-7.PNG "batch launched")
+
+
+![Generated pictures](capture-8.PNG "generated pictures")
+
+![Generated pictures](capture-9.PNG "generated pictures")
+
+
 
 
 
