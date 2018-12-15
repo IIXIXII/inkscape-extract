@@ -12,7 +12,7 @@ Property of svg object is accessible with the menu object. You will need to chan
 ![Property of svg object](capture-1.PNG "Property menu")
 
 The name for the extracted object is **picture**.
-![Name of the extracted object](capture-2.PNG "picture")
+![Name of the extracted object](capture-2.PNG "picture")<!-- .element height="50%" width="50%" -->
 
 The name for the filename of extracted object is **name**. Could you use folder in the name.
 ![Filename of the extracted object](capture-3.PNG "name")

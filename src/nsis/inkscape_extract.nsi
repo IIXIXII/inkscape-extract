@@ -54,7 +54,7 @@
 
 ;---------------------------------
 Name "${PRODUCT_LONGNAME}"
-OutFile "setup_${PRODUCT_SHORTNAME}-v${PRODUCT_VERSION}-[${BUILD_NUMBER}]-${TIMESTAMP}.exe"
+OutFile "../../setup_${PRODUCT_SHORTNAME}-v${PRODUCT_VERSION}-[${BUILD_NUMBER}]-${TIMESTAMP}.exe"
 ShowInstDetails "nevershow"
 ShowUninstDetails "nevershow"
 CRCCheck On
@@ -96,6 +96,8 @@ Section "install"
 
  	File /r /x *.log "..\\..\\distribution\\*.*"
  	File /r /x *.log "icon\\*.ico"
+ 	File "..\\..\\LICENSE"
+ 	File "..\\..\\readme.md"
 	
 	ReadRegStr $SvgFileClass HKCR ".${EXT}" ""
 ; 	MessageBox MB_OK "Class : $SvgFileClass"
