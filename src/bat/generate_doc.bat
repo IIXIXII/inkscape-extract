@@ -31,8 +31,9 @@ cd ../../doc
 SET DOXYGEN_PATH=C:\\Program Files\\doxygen\\bin
 SET DOXYGEN_EXE=doxygen.exe
 SET DOXYGEN_CMD=%DOXYGEN_PATH%\\%DOXYGEN_EXE%
+SET DOC_FOLDER=%~dp0\\..\\..\\doc
 
-SET CONFIG_FILE=%~dp0\\config_doc.dox
+SET CONFIG_FILE="%DOC_FOLDER%\\config_doc.dox"
 
 IF EXIST "%DOXYGEN_CMD%" (
 	ECHO "Found doxygen %DOXYGEN_CMD%"

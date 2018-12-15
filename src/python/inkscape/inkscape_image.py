@@ -165,8 +165,10 @@ def test_get_inkscape():
 ###############################################################################
 # Create dos batch command lines for a command line
 #
-# @param parameters the dict of parameter
 # @param cmd the command
+# @param export_type the export type
+# @param output_filename the output filename
+# @param params all parameters
 # @return the list of dos batch command.
 ###############################################################################
 def generate_batch_lines(cmd, export_type, output_filename, params=None):
@@ -200,6 +202,7 @@ def generate_batch_lines(cmd, export_type, output_filename, params=None):
 # Create dos batch command lines for a command svg
 #
 # @param parameters the dict of parameter
+# @param begin_cmd the begining of the command
 # @return the list of dos batch command.
 ###############################################################################
 def batch_cmd_svg_from_parameter(parameters, begin_cmd):
@@ -219,6 +222,7 @@ def batch_cmd_svg_from_parameter(parameters, begin_cmd):
 # Create dos batch command lines for a command pdf
 #
 # @param parameters the dict of parameter
+# @param begin_cmd the begining of the command
 # @return the list of dos batch command.
 ###############################################################################
 def batch_cmd_pdf_from_parameter(parameters, begin_cmd):
@@ -238,6 +242,7 @@ def batch_cmd_pdf_from_parameter(parameters, begin_cmd):
 # Create dos batch command lines for a command pdf
 #
 # @param parameters the dict of parameter
+# @param begin_cmd the begining of the command
 # @return the list of dos batch command.
 ###############################################################################
 def batch_cmd_eps_from_parameter(parameters, begin_cmd):
@@ -255,7 +260,10 @@ def batch_cmd_eps_from_parameter(parameters, begin_cmd):
 ###############################################################################
 # Create dos batch command lines for a command pdf
 #
-# @param parameters the dict of parameter
+# @param unused_parameters the dict of parameter
+# @param begin_cmd the begining of the command
+# @param output_png_name the name of the png
+# @param params other params
 # @return the list of dos batch command.
 ###############################################################################
 def batch_cmd_png_trans(unused_parameters, output_png_name,
@@ -275,6 +283,9 @@ def batch_cmd_png_trans(unused_parameters, output_png_name,
 # Create dos batch command lines for a command png opacity
 #
 # @param parameters the dict of parameter
+# @param begin_cmd the begining of the command
+# @param output_png_name the name of the png
+# @param params other params
 # @return the list of dos batch command.
 ###############################################################################
 def batch_cmd_png_bg_from_parameter(parameters, output_png_name,
@@ -308,6 +319,9 @@ def batch_cmd_png_bg_from_parameter(parameters, output_png_name,
 # Create dos batch command lines for a command png opacity
 #
 # @param parameters the dict of parameter
+# @param begin_cmd the begining of the command
+# @param output_png_name the name of the png
+# @param params other params
 # @return the list of dos batch command.
 ###############################################################################
 def batch_cmd_png_bgo(parameters, output_png_name,
@@ -340,6 +354,7 @@ def batch_cmd_png_bgo(parameters, output_png_name,
 # Create dos batch command lines for a command png
 #
 # @param parameters the dict of parameter
+# @param begin_cmd the begining of the command
 # @return the list of dos batch command.
 ###############################################################################
 def batch_cmd_png_from_parameter(parameters, begin_cmd):
@@ -483,7 +498,7 @@ def get_command_from_img(xml_content):
 ###############################################################################
 # get output param from command
 #
-# @param xml_content the xml
+# @param command the command
 # @param svg_filename the inkscape file
 # @return the command list.
 ###############################################################################

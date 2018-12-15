@@ -46,7 +46,6 @@ import time
 #     if get_test_folder.__folder_md_test__ is None:
 #         get_test_folder.__folder_md_test__ = check_folder(os.path.join(
 #             os.path.split(__get_this_filename())[0], "test-md"))
-
 #     return get_test_folder.__folder_md_test__
 # \endcode
 #
