@@ -100,7 +100,7 @@ Section "install"
  	File "..\\..\\readme.md"
 	
 	ReadRegStr $SvgFileClass HKCR ".${EXT}" ""
-; 	MessageBox MB_OK "Class : $SvgFileClass"
+ 	MessageBox MB_OK "Class : $SvgFileClass"
 
 	DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.${EXT}"
 	DeleteRegKey HKCR ".${EXT}\OpenWithProgids"
