@@ -32,8 +32,8 @@
 ;---------------------------------
 ; The product
 ;---------------------------------
-!define PRODUCT_SHORTNAME 	"inkscapetools"
-!define PRODUCT_LONGNAME 	"Inkscape tools"
+!define PRODUCT_SHORTNAME 	"inkscape_extract"
+!define PRODUCT_LONGNAME 	"Inkscape Extract"
 !define PRODUCT_VERSION 	"1.3"
 
 !define BN_PKG "${PRODUCT_SHORTNAME}"
@@ -43,9 +43,9 @@
 ; Explorer context and registry
 ;---------------------------------
 !define DESCRIPTION 		"Inkscape File"
-!define MENU_DESCRIPTION 	"GE Inkscape Tools"
-!define EXT 			"svg"
-!define FILECLASS 		"ge.inkscapetools.file"
+!define MENU_DESCRIPTION 	"Inkscape Extract"
+!define EXT 				"svg"
+!define FILECLASS 			"fto.inkscapeextract.file"
 
 ;---------------------------------
 ; General
@@ -69,7 +69,7 @@ BrandingText "Florent Tournois - ${TIMESTAMP}"
 
 ;--------------------------------
 ;Folder selection page
-InstallDir "$PROGRAMFILES\ge.fr\${PRODUCT_SHORTNAME}"
+InstallDir "$PROGRAMFILES\${PRODUCT_SHORTNAME}"
 InstallDirRegKey HKCU "Software\${PRODUCT_SHORTNAME}" ""
 
 ;--------------------------------
@@ -94,7 +94,7 @@ Section "install"
 	;Add files
 	SetOutPath "$INSTDIR"
 
- 	File /r /x *.log "..\\python\\dist\\*.*"
+ 	File /r /x *.log "..\\..\\distribution\\*.*"
  	File /r /x *.log "icon\\*.ico"
 	
 	ReadRegStr $SvgFileClass HKCR ".${EXT}" ""
