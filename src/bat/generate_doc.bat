@@ -40,6 +40,7 @@ IF EXIST "%DOXYGEN_CMD%" (
 ) ELSE (
 	ECHO "%DOXYGEN_CMD%"
 	ECHO "Doxygen not found"
+	pause
 	GOTO:END
 )
 
@@ -48,6 +49,7 @@ IF EXIST "%CONFIG_FILE%" (
 ) ELSE (
 	ECHO "%CONFIG_FILE%"
 	ECHO "Config file not found"
+	pause
 	GOTO:END
 )
 

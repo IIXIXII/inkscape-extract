@@ -5,16 +5,28 @@ This software is a small python program to create a batch that export images fro
 You can parameter all the export inside the svg file itself.
 
 1 - Create the svg file with inkscape
--------------------------------------
+=====================================
 
-In order to prepare your svg file, you need to set the label in the property of some objet.
-Property of svg object is accessible with the menu object. You will need to change some names.
+In order to prepare your svg file, you need to set the label in the property of some objects.
+Property of svg object is accessible with the menu object. You will need to change some names. The picture below will show you the menu in inkscape ("Object" > "Property of the object")
+
 ![Property of svg object](capture-1.PNG "Property menu")
 
-The name for the extracted object is **picture**.![Name of the extracted object](capture-2.PNG "picture")<!-- .element height="50%" width="50%" -->
+The name of the object help the program to find the right element in the all svf file. 
 
+Extracted object
+----------------
+The name for the extracted object is **picture**. The extracted object is the image you want to generate. Only the object is extracted, the object behind or somewhere else are not extracted.
+
+![Name of the extracted object](capture-2.PNG "picture")<!-- .element height="50%" width="50%" -->
+
+Name of the file
+----------------
 The name for the filename of extracted object is **name**. Could you use folder in the name.
 ![Filename of the extracted object](capture-3.PNG "name")
+
+Commands for extraction
+----------------------
 
 The list of the command object is name **command**. The list of the command is directly link to the command line of inkscape.
 
@@ -33,22 +45,28 @@ opacity) or greater than 1 up to 255 (255 meaning full opacity).
  
 ![command to extract the image](capture-4.PNG "command")
 
+Group (object, name, commands)
+------------------------------
 Finaly, group the name, the command and the picture to define the complet extraction. You can group all those object into a group object named **image**.
 ![group the all object](capture-5.PNG "image")
 
 
+Common commands for extraction
+----------------------
 You can also group some commands in the object **general_command**.
 ![group some commands](capture-6.PNG "general_command")
 
 
 2 - Create the batch to generate images
----------------------------------------
+=====================================
 
+So with a right click you could launch the batch generator.
+![Create the batch](capture-10.PNG "Link to create the batch")
 
 
 
 3 - Launch the batch and generate images
-----------------------------------------
+=====================================
 
 ![Launch batch](capture-7.PNG "batch launched")
 

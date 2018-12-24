@@ -100,7 +100,7 @@ Section "install"
  	File "..\\..\\readme.md"
 	
 	ReadRegStr $SvgFileClass HKCR ".${EXT}" ""
- 	MessageBox MB_OK "Class : $SvgFileClass"
+; 	MessageBox MB_OK "Class : $SvgFileClass"
 
 	DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.${EXT}"
 	DeleteRegKey HKCR ".${EXT}\OpenWithProgids"
@@ -131,12 +131,12 @@ Section "install"
 	DeleteRegValue HKCR "$SvgFileClass" "AppUserModelID"
 	
 	WriteRegStr  HKCR "$SvgFileClass\Shell\InkscapeToolsMenu" "MUIVerb" `${MENU_DESCRIPTION}`
-	WriteRegStr  HKCR "$SvgFileClass\Shell\InkscapeToolsMenu" "Icon" `"$INSTDIR\inkscapetools.exe"`
+	WriteRegStr  HKCR "$SvgFileClass\Shell\InkscapeToolsMenu" "Icon" `"$INSTDIR\inkscape_extract.exe"`
 	WriteRegStr  HKCR "$SvgFileClass\Shell\InkscapeToolsMenu" "ExtendedSubCommandsKey" `$SvgFileClass\${PRODUCT_SHORTNAME}.command.menu`
 	
  	WriteRegStr 		HKCR "$SvgFileClass\${PRODUCT_SHORTNAME}.command.menu\Shell\cmd1" "MUIVerb" `Create Batch for export`
  	WriteRegStr 		HKCR "$SvgFileClass\${PRODUCT_SHORTNAME}.command.menu\Shell\cmd1" "Icon" `"$INSTDIR\batch.ico"`
- 	WriteRegExpandStr 	HKCR "$SvgFileClass\${PRODUCT_SHORTNAME}.command.menu\Shell\cmd1\command" "" `"$INSTDIR\inkscapetools.exe" --create-batch=yes "%1"`
+ 	WriteRegExpandStr 	HKCR "$SvgFileClass\${PRODUCT_SHORTNAME}.command.menu\Shell\cmd1\command" "" `"$INSTDIR\inkscape_extract.exe" --create-batch=yes "%1"`
   	
 ; 	!insertmacro UPDATEFILEASSOC
 
