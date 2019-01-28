@@ -70,7 +70,6 @@ So with a right click you could launch the batch generator.
 
 ![Launch batch](capture-7.PNG "batch launched")
 
-
 ![Generated pictures](capture-8.PNG "generated pictures")
 
 ![Generated pictures](capture-9.PNG "generated pictures")
