@@ -25,36 +25,37 @@ REM ############################################################################
 SET FUN="common.bat" 
 CALL %FUN% :CONFIGURE_DISPLAY
 CALL %FUN% :CLEAR_SCREEN
-CALL %FUN% :PRINT_LINE "   Generate Documentation" 
+CALL %FUN% :PRINT_LINE "   Create installer with NSIS" 
 REM ###############################################################################
 cd ../../doc
-SET DOXYGEN_PATH=C:\\Program Files\\doxygen\\bin
-SET DOXYGEN_EXE=doxygen.exe
-SET DOXYGEN_CMD=%DOXYGEN_PATH%\\%DOXYGEN_EXE%
-SET DOC_FOLDER=%~dp0\\..\\..\\doc
+SET NSIS_PATH=C:\\Program Files (x86)\\NSIS
+SET NSIS_EXE=makensis.exe
+SET NSIS_CMD=%NSIS_PATH%\\%NSIS_EXE%
+SET NSIS_FOLDER=%~dp0\\..\\..\\src\\nsis
 
-SET CONFIG_FILE="%DOC_FOLDER%\\config_doc.dox"
+SET NSIS_FILE="%NSIS_FOLDER%\\inkscape_extract.nsi"
 
-IF EXIST "%DOXYGEN_CMD%" (
-	ECHO "Found doxygen %DOXYGEN_CMD%"
+IF EXIST "%NSIS_CMD%" (
+	ECHO "Found NSIS %NSIS_CMD%"
 ) ELSE (
-	ECHO "%DOXYGEN_CMD%"
-	ECHO "Doxygen not found"
+	ECHO "%NSIS_CMD%"
+	ECHO "Nsis not found"
 	pause
 	GOTO:END
 )
 
-IF EXIST "%CONFIG_FILE%" (
-	ECHO "Found config file %CONFIG_FILE%"
+IF EXIST "%NSIS_FILE%" (
+	ECHO "Found nsis file %NSIS_FILE%"
 ) ELSE (
-	ECHO "%CONFIG_FILE%"
-	ECHO "Config file not found"
+	ECHO "%NSIS_FILE%"
+	ECHO "NSIS file not found"
 	pause
 	GOTO:END
 )
 
 ECHO ------------------------------------------
-ECHO "Start doxygen generation"
-"%DOXYGEN_CMD%"  "%CONFIG_FILE%"
+ECHO "Start NSIS generation"
+"%NSIS_CMD%"  /V4 "%NSIS_FILE%"
+pause
 :END
 ECHO ------------------------------------------
