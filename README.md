@@ -10,7 +10,7 @@ You can parameter all the export inside the svg file itself.
 In order to prepare your svg file, you need to set the label in the property of some objects.
 Property of svg object is accessible with the menu object. You will need to change some names. The picture below will show you the menu in inkscape ("Object" > "Property of the object")
 
-![Property of svg object](doc/images/capture-1.PNG?raw=true "Property menu")
+![Property of svg object](doc/images/capture-1.PNG "Property menu")
 
 The name of the object help the program to find the right element in the all svf file. 
 
