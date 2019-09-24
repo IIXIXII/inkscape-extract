@@ -700,6 +700,7 @@ def __main():
 
     local_path = os.path.split(__get_this_filename())[0]
     file1 = os.path.join(local_path, "test-svg", "test1.svg")
+    file1 = r"C:\projet-ge\org.scn\02 - Communication et éditorial\99 - Charte graphique\Charte graphique GE 2019-09-24 v18.svg"
 
     create_batch_from_inkscape_file(file1)
 
